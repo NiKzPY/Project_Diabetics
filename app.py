@@ -38,12 +38,10 @@ st.write('User Input:', df)
 models = {'Linear Regression':model_lr, 'Ridge Model': model_ridge, 'Elastic Net':model_en}
 
 
-
-selected_models= st.selectbox('Select teh models',('Linear Regression', 'Ridge', 'Elastic Net'))
+# Select model from dropdown
+selected_models= st.selectbox('Select the models',('Linear Regression', 'Ridge Model', 'Elastic Net'))
 
 # Prediction
 if st.button('Predict'):
     prediction = models[selected_models].predict(df)[0]
     st.write(f'The predicted glucose level is *{prediction:.2f}*')
-
-    
