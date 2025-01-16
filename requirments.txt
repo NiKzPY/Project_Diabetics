@@ -1,5 +1,0 @@
-pandas
-numpy
-streamlit
-scikit-learn==1.2.0  # or the version you need
-
