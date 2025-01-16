@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
-from sklearn.datasets import load_diabetes
+from sklearn.datasets import load_diabetes 
 
 
 # Streamlit app title
